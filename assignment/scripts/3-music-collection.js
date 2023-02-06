@@ -17,4 +17,13 @@ let collection = [];
     return musicInfo; //Return the newly created object
 
  };
- 
+
+ //Test the addToCollection function:
+
+//Add 6 albums to your collection
+ console.log('The Jimi Hendrix Experience', 'Jimi Hendrix', 1967);
+ console.log('MTV Unpluggged in New York', 'Nirvana', 1994);
+ console.log('The Dark Side of the Moon', 'Pink Floyd', 1973);
+    console.log('Standing on a Beach', 'The Cure' , 1986);
+        console.log('Ok Computer', 'Radiohead', 1995);
+            console.log('Songs in the Key of Life', 'Stevie Wonder', 1976);
