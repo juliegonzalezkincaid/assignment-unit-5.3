@@ -1,5 +1,5 @@
 
-console.log('***** Music Collection *****')
+console.log('***** Music Collection *****');
 
 //Create a variable `collection` that starts as an empty array.
 let collection = [];
@@ -35,25 +35,34 @@ let collection = [];
 
 
 
-function showCollection(array){
-    console.log('showcollection', array);
 
+
+
+
+//Add a function named showCollection. This function should:
+    //Take in an array parameter. //(This allows it to be reused to show any collection, like the results from the find or search.)
+    function showCollection(array) {
+    
+   console.log(array.length);//Console.log the number of items in the array.
+
+for (let i = 0; i <=array.length; i++) //Loop over the array and console.log each album's information formatted
+{
+  
+  console.log(` ${collection[i].title} by ${collection[i].artist} published in  ${collection[i].yearPublished}`);
 
 }
 
-
-
-
-function findByArtist(){
-
-
-}
+ };
+showCollection(collection);//TITLE by ARTIST, published in YEAR.
 
 
 
 
 
-  //contentDiv.innerHTML += 
-    //    ${musicInfo.title}
-      //  ${musicInfo.artist}
-        //${musicInfo.yearPublished}           
+
+
+
+
+let artist =[];
+function findByArtist( artist, collection){}
+ 
