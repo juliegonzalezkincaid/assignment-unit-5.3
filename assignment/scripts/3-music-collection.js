@@ -1,21 +1,22 @@
 
 console.log('***** Music Collection *****');
 
-//Create a variable `collection` that starts as an empty array.
-let collection = [];
+
+let collection = [];//Create a variable `collection` that starts as an empty array.
 
  function addToCollection(title, artist, yearPublished) { //Add a function named addToCollection
     let musicInfo = {  //Create a new object having the above properties
-        title,
-        artist,
-        yearPublished,
+        title: title,
+        artist: artist,
+        yearPublished: yearPublished,
         };
+        
     collection.push(musicInfo); //Add the new object to the end of the collection array
-    console.log(collection)
-    return musicInfo;
-    //Return the newly created object
+   // console.log(collection)
+    return musicInfo;//Return the newly created object
+    }
 
- }
+
 
  //Test the addToCollection function:
 //Add 6 albums to your collection
@@ -32,37 +33,33 @@ let collection = [];
 
 
 
-
-
-
-
-
-
-
-//Add a function named showCollection. This function should:
+             
     //Take in an array parameter. //(This allows it to be reused to show any collection, like the results from the find or search.)
-    function showCollection(array) {
+    function showCollection(array) {  //Add a function named showCollection.
     
    console.log(array.length);//Console.log the number of items in the array.
-
-for (let i = 0; i <=array.length; i++) //Loop over the array and console.log each album's information formatted
+console.table(array);
+for (let i = 0; i <array.length; i++) //Loop over the array and console.log each album's information formatted
 {
-  
-  console.log(` ${collection[i].title} by ${collection[i].artist} published in  ${collection[i].yearPublished}`);
-
+    console.log(i)
+  console.log(`${collection[i].title} by ${collection[i].artist} published in  ${collection[i].yearPublished}`);
 }
-
- };
-showCollection(collection);//TITLE by ARTIST, published in YEAR.
-
-
+  };
+showCollection(collection); //TITLE by ARTIST, published in YEAR.
+console.log('end of file')
 
 
 
 
+//                   Take in artist (a string) parameter
+//function findByArtist(artist){  //Add a function named findByArtist.
+    //let results = [];//Create an array to hold any results, empty to start
+    //for (let i = 0; i <=array.length; i++){//Loop through the collection
+      //      if (artist === collection[i].artist){//add any objects with a matching artist to the array.
+        //        results.push(collection[i]);
+          //  };
+    //}; return results;
+//};
 
-
-
-let artist =[];
-function findByArtist( artist, collection){}
- 
+//console.log(findByArtist('Bob Marley'));
+//console.log(findByArtist('Jimi Hendrix'));
