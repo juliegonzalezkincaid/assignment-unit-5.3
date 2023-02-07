@@ -50,16 +50,17 @@ console.log('end of file')
 
 
 
-//TODO
+
  //                 Take in artist (a string) parameter
 function findByArtist(artist){  //Add a function named findByArtist.
     let results = [];//Create an array to hold any results, empty to start
-    for (let i = 0; i <array.length; i++){//Loop through the collection
+    for (let i = 0; i <collection.length; i++){//Loop through the collection
            if (artist === collection[i].artist){//add any objects with a matching artist to the array.
               results.push(collection[i]);
            };
     }; return results;
 };
 
-//console.log(findByArtist('Bob Marley'));
+console.log(findByArtist('Bob Marley'));
 console.log(findByArtist('Jimi Hendrix'));
+console.log(findByArtist('Stevie Wonder'));
