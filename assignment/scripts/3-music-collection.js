@@ -54,9 +54,17 @@ console.log('end of file')
  //                 Take in artist (a string) parameter
 function findByArtist(artist){  //Add a function named findByArtist.
     let results = [];//Create an array to hold any results, empty to start
-    for (let i = 0; i <collection.length; i++){//Loop through the collection
-           if (artist === collection[i].artist){//add any objects with a matching artist to the array.
-              results.push(collection[i]);
+    //let musicInfo = collection[i]
+    for (let i = 0; i <collection.length; i++){//Loop through the collection, check to see if 
+      //the item in the collection matches the artist
+           if (artist === collection[i].artist){
+            //add any objects with a matching artist to the array.
+            //collecttion is the array, we use the bracket [] notation to access something in an array, 
+            //dot notation is how we get at the property of the object
+            //look for the artist in the collection by going to each item checking to see if the artist 
+            //which is a property of musicInfo, matches the provided artist 
+              results.push(collection[i]);//if it does push that whole musicInfo into you artist list array
+              //and thats what you end up returning
            };
     }; return results;
 };
@@ -64,3 +72,10 @@ function findByArtist(artist){  //Add a function named findByArtist.
 console.log(findByArtist('Bob Marley'));
 console.log(findByArtist('Jimi Hendrix'));
 console.log(findByArtist('Stevie Wonder'));
+
+
+//objects store properties by key, arrays store by index. objects dont have any particular order 
+//even if you put that property first or second. The object itself doesnt keep track of the order
+//of the properties. Arrays do keep track of order so we can loop over an array and access things 
+// by index. The properties do have to be referenced by key (.artist) or if you use bracket notation
+//then it has to be brackets a dn the the string artist to pull the artist out of the object
